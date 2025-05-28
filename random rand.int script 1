@@ -1,0 +1,44 @@
+# Random_randint script:
+
+def main():
+   print("Khansole Academy")
+   rand_num_1 = random.randint(10, 99)
+   rand_num_2 = random.randint(10, 99)
+   answer = rand_num_1 + rand_num_2
+   question = int(input(f"What is {rand_num_1} + {rand_num_2}? "))
+   print (f"Your answer: {answer}")
+   if question != answer:
+       print (f"Incorrect. \nThe expected answer is {answer}")
+   else:
+       print ("Correct!")
+  
+  
+if __name__ == '__main__':
+   main()
+
+
+# ALT:
+
+
+import random
+
+
+def main():
+   print("Khansole Academy")
+   rand_num_1 = random.randint(10, 99)
+   rand_num_2 = random.randint(10, 99)
+   print(f"What is {rand_num_1} + {rand_num_2}?")
+   user_input = int(input("Your answer: "))
+   correct_answer = rand_num_1 + rand_num_2
+
+
+   if user_input == correct_answer:
+       print("Correct!")
+   else:
+       print("Incorrect.")
+       print(f"The expected answer is {correct_answer}")
+
+
+if __name__ == '__main__':
+   main()
+
